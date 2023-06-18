@@ -1,0 +1,116 @@
+@import './main';
+
+// sponsor bar
+.featureJob {
+  position: relative;
+  top: 120px;
+  width: 100%;
+  .text {
+    text-align: center;
+    padding: 50px;
+  }
+  background: @light;
+  .sponsor {
+    width: 100%;
+    display: flex;
+    .centerX();
+    .wrap();
+    div img {
+      width: 150px;
+      margin: 60px;
+    }
+  }
+  // feature job
+  .headerJob {
+    width: 100%;
+    text-align: center;
+    font-size: 1.4rem;
+  }
+  .jobCards {
+    width: 100%;
+    .centerX();
+    .wrap();
+    background: @light;
+    .cardBox > div {
+      margin: 10px;
+    }
+    .cardBox {
+      width: 100%;
+      max-width: 400px;
+      height: 330px;
+      margin: 60px;
+      border-radius: 10px;
+      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+      .profileH {
+        img {
+          width: 50px;
+          border-radius: 50%;
+        }
+        ion-icon[name='star'] {
+          color: @orange;
+        }
+        ion-icon {
+          float: right;
+          padding: 8px;
+          font-size: 1.5rem;
+        }
+      }
+      .cardH {
+        width: 100%;
+        font-size: 0.8rem;
+        line-height: 25px;
+        p {
+          color: @gray;
+          font-size: 1rem;
+          span {
+            font-weight: 900;
+            color: @green;
+          }
+        }
+      }
+      .category {
+        position: relative;
+        top: 20px;
+        .wrap();
+        .time {
+          color: @purple;
+          text-shadow: 1px 1px 2px black, 0 0 1em @purple;
+        }
+        div {
+          font-size: 1.1rem;
+          margin: 5px;
+          ion-icon {
+            font-size: 1.4rem;
+          }
+        }
+        .cost,
+        .location {
+          color: @green;
+          text-shadow: 1px 1px 2px black, 0 0 1em @green;
+        }
+      }
+    }
+    .date {
+      position: relative;
+      top: 60px;
+      span {
+        color: @green;
+        font-weight: bold;
+      }
+    }
+  }
+  .viewJob {
+    .centerX();
+    a {
+      border: 1px solid @green;
+      border-radius: 20px;
+      padding: 10px;
+      color: @green;
+      transition: 0.2s;
+    }
+    a:hover {
+      background: @green;
+      color: @light;
+    }
+  }
+}

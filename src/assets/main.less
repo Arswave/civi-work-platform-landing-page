@@ -1,0 +1,62 @@
+/*color*/
+@dark: #222;
+@gray: #333;
+@light: #fff;
+@green: #007456;
+@purple: #6c4cbe;
+@orange: #ff9200;
+@purple: #6c4cbe;
+/*global*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body {
+  background: @green;
+}
+a {
+  text-decoration: none;
+}
+ul li {
+  list-style: none;
+}
+/*mixin */
+.centerX {
+  display: flex;
+  justify-content: center;
+}
+.centerY {
+  display: flex;
+  align-items: center;
+}
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.gridCenter {
+  display: grid;
+  place-items: center;
+}
+.flexLeft {
+  display: flex;
+  justify-content: flex-start;
+}
+.flexRight {
+  display: flex;
+  justify-content: flex-end;
+}
+.backImg {
+  background-size: 100% 100%;
+  background-position: center;
+}
+.iconPosition {
+  position: relative;
+  top: 3px;
+}
+.wrap {
+  display: flex;
+  flex-wrap: wrap;
+}

@@ -1,0 +1,134 @@
+@import 'main';
+
+// info
+.infoNav nav {
+  display: flex;
+  width: 100%;
+  padding: 10px 20px;
+  background: @dark;
+}
+.infoNav nav ul {
+  width: calc(100% - 30%);
+  .flexRight();
+}
+.infoNav p,
+.infoNav ion-icon,
+.infoNav a {
+  color: @light;
+  font-size: 1rem;
+}
+.infoNav ul li {
+  margin-left: 10px;
+}
+.infoNav ion-icon {
+  .iconPosition();
+}
+
+// nav menu
+.logo {
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+  background-image: url('https://cdn.freebiesupply.com/logos/large/2x/civic-2-logo-png-transparent.png');
+  .backImg();
+}
+.navBarMenu nav {
+  width: 100%;
+  display: flex;
+  .navMenu {
+    display: flex;
+  }
+  .navMenu ul {
+    display: flex;
+    gap: 30px;
+    padding: 25px 50px;
+    li a {
+      color: @light;
+      ion-icon {
+        .iconPosition();
+      }
+      a {
+        float: right;
+      }
+    }
+  }
+}
+// nav bar right side
+.loginBtn {
+  .flexRight();
+  width: 60%;
+  ul {
+    display: flex;
+    li {
+      padding: 20px 10px;
+      a {
+        color: @light;
+        font-weight: bolder;
+      }
+    }
+  }
+}
+// toggle menu
+.toggleIcon {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  margin: 10px 20px;
+  display: none;
+  cursor: pointer;
+  ion-icon {
+    font-size: 3rem;
+    color: @light;
+  }
+}
+
+// responsive
+.toggleMenu {
+  display: none;
+}
+@media (max-width: 999px) {
+  // info nav bar
+  .infoNav {
+    display: none;
+  }
+  // toggle menu
+  .toggleIcon {
+    display: block;
+  }
+  .logo {
+    margin-left: 100px;
+  }
+  .navMenu ul li {
+    display: none;
+  }
+  .toggleMenu {
+    position: relative;
+    width: 140px;
+    height: 200px;
+    position: absolute;
+    .flexRight();
+    top: 73px;
+
+    text-align: center;
+    left: 0;
+    background: @green;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    ul {
+      .wrap();
+      margin: 10px;
+      li ion-icon {
+        .iconPosition();
+      }
+      li a {
+        color: @light;
+      }
+      li a:hover {
+        background: @light;
+        color: @green;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px,
+          rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px,
+          rgba(0, 0, 0, 0.09) 0px -3px 5px;
+      }
+    }
+  }
+}

@@ -1,0 +1,85 @@
+@import './main';
+
+footer {
+  .centerX();
+  position: relative;
+  width: 100%;
+  top: 120px;
+  background: @light;
+  .wrap();
+
+  // subscribe
+  .image {
+    width: 70px;
+    height: 70px;
+    background: @green;
+    border-radius: 50%;
+    .center();
+    ion-icon {
+      font-size: 2rem;
+      color: @light;
+    }
+  }
+  .subH {
+    margin-right: 40%;
+  }
+  input[type='email'],
+  input[type='submit'] {
+    padding: 10px;
+    border: none;
+  }
+  input[type='submit'] {
+    color: @light;
+    background: @green;
+    border-radius: 20px;
+  }
+}
+footer > div {
+  margin: 20px;
+}
+
+// responsive
+@media screen and (max-width: 1400px) {
+  .subH {
+    margin-left: 40%;
+  }
+}
+
+// footer media info
+.footer {
+  a:hover {
+    text-decoration: underline;
+  }
+  .navFooter {
+    .wrap();
+    .centerX();
+    gap: 150px;
+    line-height: 2.8rem;
+    .info div {
+      margin: 10px;
+      line-height: 1.4rem;
+    }
+    a {
+      color: @gray;
+    }
+    .about {
+      width: 100%;
+      max-width: 500px;
+    }
+    .about p {
+      width: calc(500px-200px);
+      line-height: 1.1rem;
+    }
+  }
+  .copy p {
+    color: @gray;
+  }
+}
+
+// responsive
+@media screen and (max-width: 1500px) {
+  .navFooter {
+    .wrap();
+    gap: 30px;
+  }
+}

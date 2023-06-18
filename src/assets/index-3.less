@@ -1,0 +1,45 @@
+@import './main';
+
+.register {
+	position: relative;
+	top: 120px;
+.registerBox {
+	display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: minmax(100px, auto);
+		.leftSide {
+		background: @orange;
+	}
+	.rightSide {
+		background: @gray;
+	}
+	.rightSide, .leftSide {
+
+	.wrap();
+		width: 100%;
+		height: 40vh;
+		.gridCenter();
+		color: @light;
+		h4 {
+			font-size: 1.5rem;
+		}
+		a{
+			padding: 10px;
+			border: 1px solid @green;
+			color: @green;
+			font-weight: 900;
+			border-radius: 20px;
+			transition: .2s;
+		}
+		a:hover {
+			background: @green;
+			color: @light;
+		}
+	}
+}
+}
+@media (max-width: 640px) {
+	.registerBox {
+		display: block;
+	}	
+}
